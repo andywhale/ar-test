@@ -1,0 +1,15 @@
+# Blender MTL File: 'None'
+# Material Count: 1
+
+newmtl Paladin_MAT
+Ns 179.999996
+Ka 0.500000 0.500000 0.500000
+Kd 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump /home/app/mixamo-mini/tmp/skins_e5d19211-bb6c-4460-8370-11f55b3e8e29.fbm/Paladin_normal.png
+map_Kd /home/app/mixamo-mini/tmp/skins_e5d19211-bb6c-4460-8370-11f55b3e8e29.fbm/Paladin_diffuse.png
+map_Ks /home/app/mixamo-mini/tmp/skins_e5d19211-bb6c-4460-8370-11f55b3e8e29.fbm/Paladin_specular.png
