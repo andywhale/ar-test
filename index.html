@@ -19,7 +19,7 @@
         margin: 0px;
       }
       .embed-container {
-        height: 500px;
+        height: 800px;
       }
       .orange {
         background-color: orange;
@@ -39,25 +39,21 @@
   </head>
   <body>
     <div class="container orange">
-      <h1>Some crazy AR stuff</h1>
+      <h1>Some AR stuff</h1>
     </div>
 
     <div class="embed-container">
     <a-scene embedded arjs>
       <a-assets>
-        <a-asset-item id="mushroom-obj" src="/assets/mushroom.obj"></a-asset-item>
-        <a-asset-item id="mushroom-mtl" src="/assets/mushroom.mtl"></a-asset-item>
+        <a-asset-item id="cup-obj" src="/assets/cup/cup.obj"></a-asset-item>
+        <a-asset-item id="cup-mtl" src="/assets/cup/cup.mtl"></a-asset-item>
       </a-assets>
 
       <!-- create your content here. just a box for now -->
-      <a-entity scale="1 1 1" rotation="0 45 0" position="0 0 0" obj-model="obj: #mushroom-obj; mtl: #mushroom-mtl"></a-entity>
+      <a-entity scale="0.8 0.8 0.8" rotation="0 0 0" position="0 0 0" obj-model="obj: #cup-obj; mtl: #cup-mtl"></a-entity>
       <!-- define a camera which will move according to the marker position -->
       <a-marker-camera preset='hiro'></a-marker-camera>
     </a-scene>
-    </div>
-
-    <div class="container red">
-      <h2>Some more crazy AR stuff</h2>
     </div>
 
   </body>
