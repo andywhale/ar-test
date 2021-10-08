@@ -2,18 +2,54 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Paladin</title>
-    <meta name="description" content="Objects - A-Frame">
+    <title>Mushroom</title>
+    <meta name="description" content="Mushroom">
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <style>
+      body, html {
+        padding: 0px;
+        margin: 0px;
+        font-family: serif;
+      }
+      .container {
+        padding: 10px;
+      }
+      .container h1 {
+        margin: 0px;
+      }
+      .embed-container {
+        height: 500px;
+      }
+      .orange {
+        background-color: orange;
+        color: white;
+      }
+      .red {
+        background-color: red;
+        color: white;
+      }
+      .columns-2 {
+        columns: 2;
+      }
+      .columns-3 {
+        columns: 3;
+      }
+    </style>
   </head>
   <body>
-    <a-scene>
+    <div class="container orange">
+      <h1>Badger, Badger, Badger...</h1>
+    </div>
+
+    <div class="embed-container">
+    <a-scene embedded>
       <a-assets>
-        <a-asset-item id="tree-obj" src="/assets/ancient/all_combined.obj"></a-asset-item>
-        <a-asset-item id="tree-mtl" src="/assets/ancient/all_combined.mtl"></a-asset-item>
+        <a-asset-item id="mushroom-obj" src="/assets/mushroom.obj"></a-asset-item>
+        <a-asset-item id="mushroom-mtl" src="/assets/mushroom.mtl"></a-asset-item>
       </a-assets>
 
-      <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl"></a-entity>
+      <a-entity obj-model="obj: #mushroom-obj; mtl: #mushroom-mtl"></a-entity>
     </a-scene>
+    </div>
   </body>
 </html>
